@@ -1,0 +1,106 @@
+DDL COMMANDS:
+CREATE
+ALTER
+RENAME
+TRUNCATE
+DROP
+
+******************* ************************************************************
+CREATE DATABASE:
+CREATE DATABASE INFORMATION;
+
+TO SEE DATABASE PRESENT IN THE SYSTEM:
+SHOW DATABASES;
+
+WHICH DATABASE WE WANT TO USE:
+USE INFORMATION;
+*******************************************************************************
+
+CREATE TABLE:
+CREATE TABLE STUDENT
+(
+ID INTEGER PRIMARY KEY,
+NAME VARCHAR(20),
+DEPARTMENT VARCHAR(20)
+);
+
+*******************************************************************************
+TO SEE TABLES:
+SHOW TABLES;
+
+TO SEE ENTIRE TABLE:
+SELECT * FROM STUDENT;
+*******************************************************************************
+
+INSERT DATA INTO TABLES:
+INSERT INTO STUDENT VALUES(1, 'ASHWINI' , 'IT');
+INSERT INTO STUDENT (ID, NAME, DEPARTMENT) VALUES (2, 'SHUBHAM', 'IT');
+INSERT INTO STUDENT (ID, DEPARTMENT, NAME) VALUES (3, 'IT', 'KARTIK');
+
+*******************************************************************************
+ALTER COMMANDS:
+1)ALTER_ADD:
+ALTER TABLE STUDENT ADD JOIN_DATE DATE;
+
+2)ALTER_MODIFY:
+ALTER TABLE STUDENT MODIFY NAME VARCHAR(30);
+
+3)ALTER_RENAME:
+ALTER TABLE STUDENT RENAME TO STUD;
+ALTER TABLE STUD RENAME TO STUDENT;
+
+4)ALTER_DROP:
+ALTER TABLE STUDENT DROP COLUMN JOIN_DATE;
+
+*******************************************************************************
+TRUNCATE:
+TRUNCATE TABLE STUDENT;
+
+*******************************************************************************
+
+DROP:
+DROP TABLE STUDENT;
+
+*******************************************************************************
+
+RENAME:
+RENAME TABLE STUDENT TO STUD;
+RENAME TABLE STUD TO STUDENT;
+
+*******************************************************************************
+
+DML COMMANDS
+INSERT
+SELECT
+UPDATE
+DELETE
+
+INSERT NEW VALUES IN TABLE:
+INSERT INTO STUDENT VALUES (4 , 'VIKAS', 'COMPUTER');
+INSERT INTO STUDENT VALUES(5, 'ALISHA' , 'COMPUTER');
+
+*******************************************************************************
+
+UPDATE:
+UPDATE STUDENT SET DEPARTMENT='IT' WHERE ID =4;
+UPDATE STUDENT SET DEPARTMENT='COMPUTER' WHERE ID=4;
+
+*******************************************************************************
+
+DELETE:
+DELETE FROM STUDENT WHERE ID=3;
+*******************************************************************************
+
+SELECT:
+SELECT NAME FROM STUDENT;
+SELECT DEPARTMENT FROM STUDENT;
+SELECT 1 FROM STUDENT;
+SELECT 'NAME OF THE STUDENT IS' , NAME FROM STUDENT;
+
+OUTPUT:
+
+# ID	NAME	DEPARTMENT	JOIN_
+1	ASHWINI	IT	
+2	SHUBHAM	IT	
+3	KARTIK	IT	
+
